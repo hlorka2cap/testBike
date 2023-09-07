@@ -1,0 +1,136 @@
+.container {
+    width: 100%;
+    max-width: 104.625rem;
+    padding: 0 2.75rem 0 1.25rem;
+    margin: 0 auto;
+}
+
+.header {
+    color: #fff;
+}
+
+.header-top {
+    background: #0c1111;
+    padding: 0.3125rem 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-part.second {
+    column-gap: 1.1875rem;
+}
+
+.nav-part.main {
+    column-gap: 2.25rem;
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    color: #e0e0e0;
+    font-size: 0.75rem;
+    gap: 1.6875rem;
+}
+
+.location-item {
+    display: flex;
+    line-height: 1.625rem;
+}
+
+.location-icon {
+    margin-right: 0.6825rem;
+    display: inline;
+    line-height: unset;
+    height: 0.625rem;
+    width: 0.625rem;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phones {
+    font-size: 0.875rem;
+    font-weight: 700;
+    gap: 1.1875rem;
+    display: flex;
+}
+
+.phones-item {
+    color: #fff;
+    display: block;
+    line-height: 1.625rem;
+}
+
+.services {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.services-item {
+    width: 10.75rem;
+    font-size: 0.75rem;
+    height: 1.625rem;
+    background-color: #333;
+    border-radius: 0.4375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 1.1875rem;
+}
+
+.nav-list__item-link {
+    color: #bdbdbd;
+    font-size: 0.75rem;
+}
+
+@media screen and (max-width: 1440px) {
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    .location {
+        flex-direction: column;
+        row-gap: 0.25rem;
+        justify-content: center;
+    }
+
+    .phones {
+        flex-direction: column;
+        row-gap: 0.25rem;
+        justify-content: center;
+    }
+
+    .services {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-list__item-link {
+        line-height: 70px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header-top {
+        display: none;
+    }
+}
