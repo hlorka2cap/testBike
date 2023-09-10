@@ -205,9 +205,7 @@
   border-radius: 0.5625rem;
   padding: 0.5625rem 1.6875rem 0.5rem;
   width: 100%;
-  /* width: fill-available; */
   color: #000;
-  /* flex-grow: 1; */
 }
 
 .search-field::placeholder {
@@ -364,6 +362,48 @@
 .help-header__item.phone {
   display: flex;
   gap: 1.625rem;
+}
+
+.help-content {
+  margin-top: 3.0625rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.help-content.mobile {
+  display: none;
+}
+
+.help-content__item {
+  width: calc(25% - 2rem);
+  /* height: 27rem; */
+  height: 30vw;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #E2E6EB 19.77%, #F3F1F5 62.29%);
+  padding: 1.625rem 3.0625rem;
+}
+
+.help-content__item.half {
+  width: calc(50% - 1rem);
+}
+
+.help-content__group {
+  width: calc(50% - 1rem);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.help-content__group-item {
+  width: calc(50% - 1rem);
+  border-radius: 20px;
+  width: 100%;
+  height: calc(50% - 16px);
+  background: linear-gradient(90deg, #E2E6EB 19.77%, #F3F1F5 62.29%);
+  padding: 1.625rem 3.0625rem;
+
 }
 
 @media screen and (max-width: 1440px) {
