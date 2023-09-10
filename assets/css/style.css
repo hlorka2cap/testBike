@@ -324,20 +324,46 @@
   font-size: 0.75rem;
 }
 
-/* .breadcrumb:not(:last-child),
-.breadcrumb:not(:last-child) .breadcrumb-link {
-  color: red;
-} */
-
 .breadcrumb:not(:last-child):after {
   content: '/';
   display: inline;
-  color:#333;
+  color: #333;
   padding-right: 0.25rem;
 }
 
 .breadcrumb:last-child {
   color: #BDBDBD;
+}
+
+.help-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.625rem;
+}
+
+.help-header-title {
+  font-size: 1.625rem;
+  font-weight: 600;
+  line-height: 2.375rem;
+}
+
+.help-header__text {
+  line-height: 2.5rem;
+  letter-spacing: 0.0088rem;
+  color: #000;
+}
+
+.help-header__phone {
+  font-weight: 600;
+  letter-spacing: 0.015rem;
+  line-height: 2.375rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.help-header__item.phone {
+  display: flex;
+  gap: 1.625rem;
 }
 
 @media screen and (max-width: 1440px) {
@@ -391,5 +417,31 @@
 
   .header-main {
     background: #000000;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .help-header {
+    flex-direction: column;
+  }
+
+  .help-header__item.phone {
+    margin-top: 1.625rem;
+    flex-direction: column;
+    align-items: normal;
+    gap: 0.0625rem;
+  }
+
+  .help-header__text {
+    font-size: 1rem;
+  }
+
+  .help-header__phone {
+    font-weight: 700;
+    letter-spacing: 0.08rem;
   }
 }
