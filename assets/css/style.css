@@ -1,8 +1,13 @@
+body {
+  position: relative;
+}
+
 .container {
   width: 100%;
   max-width: 104.625rem;
-  padding: 0 2.75rem 0 1.25rem;
+  /* padding: 0 2.75rem 0 1.25rem; */
   margin: 0 auto;
+  padding: 1rem;
 }
 
 .header {
@@ -367,121 +372,105 @@
 .help-content {
   margin-top: 3.0625rem;
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-between;
+}
+
+.help-content__part-subcontainer {
+  display: flex;
+  gap: 1rem;
 }
 
 .help-content.mobile {
   display: none;
 }
 
-.help-content__item {
-  width: calc(25% - 2rem);
-  /* height: 27rem; */
-  height: 30vw;
-  border-radius: 20px;
-  background: linear-gradient(90deg, #E2E6EB 19.77%, #F3F1F5 62.29%);
-  padding: 1.625rem 3.0625rem;
-}
-
-.help-content__item.half {
-  width: calc(50% - 1rem);
-}
-
-.help-content__group {
-  width: calc(50% - 1rem);
+.help-content__part {
+  gap: 1rem;
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  flex-wrap: wrap;
 }
 
-.help-content__group-item {
-  width: calc(50% - 1rem);
-  border-radius: 20px;
+.help-content__part.first {
+  width: 55rem;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.help-content__part.second {
+  width: 48.625rem;
+}
+
+.help-content__part.second .help-content__part-subcontainer {
+  flex-direction: column;
   width: 100%;
-  height: calc(50% - 16px);
+  height: 17.9524vw;
+}
+
+.help-content__part.second .help-content__part-subcontainer .bonus-system {
+  height: 9.527vw;
+}
+
+.help-content__part.second .help-content__part-subcontainer .assurance {
+  height: 7.485vw;
+}
+
+.help-content__part .easy-return,
+.help-content__part .delivery {
+  height: 12.225vw;
+}
+
+.help-content__item {
+  width: 100%;
+  height: 17.9524vw;
+  border-radius: 20px;
   background: linear-gradient(90deg, #E2E6EB 19.77%, #F3F1F5 62.29%);
   padding: 1.625rem 3.0625rem;
-
 }
 
-@media screen and (max-width: 1440px) {
-  .container {
-    padding: 0 1.25rem;
-  }
-
-  .location {
-    flex-direction: column;
-    row-gap: 0.25rem;
-    justify-content: center;
-  }
-
-  .phones {
-    flex-direction: column;
-    row-gap: 0.25rem;
-    justify-content: center;
-  }
-
-  .services {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .nav-list__item-link {
-    line-height: 70px;
-  }
+.help-content__item.happy-to-help,
+.help-content__item.payment {
+  max-width: 27rem;
 }
 
-/* TODO:  i want do something to delete it media query*/
-@media screen and (max-width: 1200px) {
-  .login-text {
-    display: none;
-  }
-
-  .login {
-    background: none;
-    padding: 0;
-  }
-
-  .login-avatar {
-    height: 2.5rem;
-    width: 2.5rem;
-  }
+.section {
+  margin-top: 2.1875rem;
 }
 
-@media screen and (max-width: 992px) {
-  .header-desktop {
-    display: none;
-  }
 
-  .header-main {
-    background: #000000;
-  }
 
-  .breadcrumbs {
-    display: none;
-  }
+.section-title {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
 }
 
-@media screen and (max-width: 620px) {
-  .help-header {
-    flex-direction: column;
-  }
+.section-content {
+  /* margin-top: 1.625rem; */
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  max-width: 73.6875rem;
+}
 
-  .help-header__item.phone {
-    margin-top: 1.625rem;
-    flex-direction: column;
-    align-items: normal;
-    gap: 0.0625rem;
-  }
+.section-text {
+  margin-top: 1.625rem;
+}
 
-  .help-header__text {
-    font-size: 1rem;
-  }
+.section-list {
+  margin-top: 1.625rem;
+}
 
-  .help-header__phone {
-    font-weight: 700;
-    letter-spacing: 0.08rem;
-  }
+.section-list__item {
+  list-style-type: disc;
+  padding-left: 0.5rem;
+  list-style-position: inside;
+  text-indent: -1.5em;
+  padding-left: 2em;
+}
+
+.section a {
+  color: #333;
+  text-decoration: underline;
 }

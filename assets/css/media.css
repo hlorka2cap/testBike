@@ -1,0 +1,83 @@
+@media screen and (max-width: 1440px) {
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    .location {
+        flex-direction: column;
+        row-gap: 0.25rem;
+        justify-content: center;
+    }
+
+    .phones {
+        flex-direction: column;
+        row-gap: 0.25rem;
+        justify-content: center;
+    }
+
+    .services {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-list__item-link {
+        line-height: 70px;
+    }
+}
+
+/* TODO:  i want do something to delete it media query*/
+@media screen and (max-width: 1200px) {
+    .login-text {
+        display: none;
+    }
+
+    .login {
+        background: none;
+        padding: 0;
+    }
+
+    .login-avatar {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header-desktop {
+        display: none;
+    }
+
+    .help-content.desktop {
+        display: none;
+    }
+
+    .header-main {
+        background: #000000;
+    }
+
+    .breadcrumbs {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .help-header {
+        flex-direction: column;
+    }
+
+    .help-header__item.phone {
+        margin-top: 1.625rem;
+        flex-direction: column;
+        align-items: normal;
+        gap: 0.0625rem;
+    }
+
+    .help-header__text {
+        font-size: 1rem;
+    }
+
+    .help-header__phone {
+        font-weight: 700;
+        letter-spacing: 0.08rem;
+    }
+}

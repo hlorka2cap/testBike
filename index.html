@@ -8,6 +8,7 @@
   <title>testBike</title>
   <link rel="stylesheet" href="/assets/css/reset.css" />
   <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/media.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -251,30 +252,34 @@
           </div>
         </div>
         <div class="help-content desktop">
-          <div class="help-content__item">
-            <p class="help-content__title">Мы всегда рады помочь</p>
-          </div>
-          <div class="help-content__item">
-            <p class="help-content__title">Оплата</p>
-
-          </div>
-          <div class="help-content__group">
-            <div class="help-content__group-item">
-              <p class="help-content__title">Бонусная система</p>
+          <div class="help-content__part first">
+            <div class="help-content__part-subcontainer">
+              <div class="help-content__item happy-to-help">
+                <p class="help-content__title">Мы всегда рады помочь</p>
+              </div>
+              <div class="help-content__item payment">
+                <p class="help-content__title">Оплата</p>
+              </div>
             </div>
-            <div class="help-content__group-item">
-              <p class="help-content__title">Гарантия</p>
-
+            <div class="help-content__item easy-return">
+              <p class="help-content__title">Легкий возврат</p>
             </div>
           </div>
-          <div class="help-content__item half">
-            <p class="help-content__title">Легкий возврат</p>
-
-          </div>
-          <div class="help-content__item half">
-            <p class="help-content__title">Доставка</p>
+          <div class="help-content__part second">
+            <div class="help-content__part-subcontainer">
+              <div class="help-content__item bonus-system">
+                <p class="help-content__title">Бонусная система</p>
+              </div>
+              <div class="help-content__item assurance">
+                <p class="help-content__title">Гарантия</p>
+              </div>
+            </div>
+            <div class="help-content__item delivery">
+              <p class="help-content__title">Доставка</p>
+            </div>
           </div>
         </div>
+
         <div class="help-content mobile">
           <div class="help-content__item">
             <p class="help-content__title">Мы всегда рады помочь</p>
@@ -303,8 +308,108 @@
         </div>
       </div>
     </section>
-    <section class="manual"></section>
-    <section class="refund"></section>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Как сделать заказ</h2>
+        <div class="section-content">
+          <p class="section-text">
+            Мы делаем все возможное, чтобы максимально облегчить вам оформление заказа. Для того, чтобы сделать это:
+          </p>
+          <ul class="section-list">
+            <li class="section-list__item">
+              Перейдите в раздел <a href="#">«Каталог»</a>;
+            </li>
+            <li class="section-list__item">
+              под понравившимся товаром нажать на зеленую кнопку "Купить": это отправляет ваш заказ в виртуальную
+              корзину;
+            </li>
+            <li class="section-list__item">
+              переходите в корзину и оформляете заказ;
+            </li>
+            <li class="section-list__item">
+              система автоматически зарегестирует вас;
+            </li>
+            <li class="section-list__item">
+              ожидайте смс или email уведомление о статусе вашего заказа. При возникновении вопросов будем рады помочь
+              по телефону 8(800)500-30-20
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Легкий возврат</h2>
+        <div class="section-content">
+          <p class="section-text">
+            Покупайте, пробуйте, вам понравится, если нет, мы вернем вам деньги! Без вопросов, заявлений и
+            дополнительных комиссий.
+            Вы вправе передумать. Мы в «Байк Центре» понимаем это, и с радостью сделаем вам обмен на понравившийся вам
+            товар или вернём деньги.
+          </p>
+          <ul class="section-list">
+            <li class="section-list__item">
+              Свяжитесь с нами по телефону или онлайн-чаты. Мы оформим вам бланк возврата и вышлем его вам на
+              электронную почту;
+            </li>
+            <li class="section-list__item">
+              распечатайте и заполните бланк, его нужно будет сдать вместе с заказом на указанном нами пункте выдачи ;
+            </li>
+            <li class="section-list__item">
+              надёжно упакуйте товар в коробку, предотвращая трение изделий между собой и свободное перемещение товара
+              внутри упаковки;
+            </li>
+            <li class="section-list__item">
+              сдайте заказ в том же месте, где получали его или другом удобном вам партнёрском пункте выдачи заказов или
+              магазине;
+            </li>
+          </ul>
+          <p class="section-text">
+            Возврат и обмен товара производится на основании Закона РФ "О защите прав потребителей" и регулируется ст.
+            18, 19, 20, 21.
+          </p>
+          <p class="section-text">
+            В случае доставки на дом и возникновения гарантийного случая/наличия брака у товара, мы самостоятельно и за
+            свой счёт заберём от вас данный товар.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Обратная связь</h2>
+        <div class="section-content">
+          <p class="section-text">
+            Если у вас есть предложения или замечания по работе интернет-магазина «Байк Центр», то вы всегда можете
+            обратиться к нам:
+          </p>
+          <ul class="section-list">
+            <li class="section-list__item">
+              в социальной сети <a href="#">ВКонтакте</a>;
+            </li>
+            <li class="section-list__item">
+              по электронной почте руководителю интернет-магазина <a
+                href="mail:info@bike-centre.ru">info@bike-centre.ru</a>;
+            </li>
+            <li class="section-list__item">
+              написав отзыв о работе «Байк Центра».
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section not-found">
+      <div class="container">
+        <h2 class="section-title">Не нашли то что нужно?</h2>
+        <div class="section-content">
+          <p class="section-text">
+            Позвоните нам по номеру <a href="tel:800000000000">8 (800) 000000000</a>
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer"></footer>
   <script src="/assets/js/script.js"></script>
